@@ -15,7 +15,8 @@ async function getAFact() {
 
 function displayFact(fact) {
   const factDiv = document.getElementById("fact-wrap");
-  const factText = document.createElement("p");
+  const factText = document.createElement("div");
+  factText.className = "card";
   factText.innerHTML = fact;
   factDiv.appendChild(factText);
 }
