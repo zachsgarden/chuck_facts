@@ -4,11 +4,18 @@
     <meta charset="UTF-8" />
     <title>Chuck Norris Facts</title>
     <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
   </head>
   <body>
-    <h1>Chuck Norris Facts</h1>
-    <div id="fact-wrap"></div>
-    <button onclick="getAFact()">Give me the facts</button>
-    <script src="script.js"></script>
+    <div class="container">
+      <h1>Chuck Norris Facts</h1>
+      <div id="fact-wrap" class="row"></div>
+      <button onclick="getAFact()">Give me the facts</button>
+    </div>
   </body>
 </html>
