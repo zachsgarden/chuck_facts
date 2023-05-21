@@ -18,7 +18,7 @@ function displayFact(fact) {
   const factCol = document.createElement("div");
   const factCard = document.createElement("div");
   factCol.classList.add("col", "s12", "m6", "l4");
-  factCard.classList.add("card", "small");
+  factCard.classList.add("card", "my-card", "small");
   factCard.innerHTML = fact;
   factWrap.prepend(factCol);
   factCol.appendChild(factCard);

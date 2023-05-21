@@ -54,6 +54,15 @@ h1#site-heading {
   overflow-y: scroll;
 }
 
+.col:first-child .card.my-card {
+  background-color: #fff;
+  border: 5px solid lightskyblue;
+}
+
+.col .card.my-card {
+  background-color: #ccc;
+}
+
 .card::-webkit-scrollbar {
   display: none; /* for Chrome, Safari, and Opera */
 }
