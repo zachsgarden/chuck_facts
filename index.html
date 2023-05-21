@@ -8,16 +8,45 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="script.js"></script>
   </head>
   <body>
     <div class="container">
-      <h1>Chuck Norris Facts</h1>
+      <!-- Materialize adds a display of block to the semantic header and I need it to be flex. -->
+      <div class="header">
+        <img
+          src="./images/chuck.png"
+          class="chuck-header-img"
+          alt="Chuck Norris being the man."
+        />
+        <h1 id="site-heading">Chuck Norris Facts</h1>
+        <a
+          id="scale-demo"
+          href="#!"
+          onclick="getAFact()"
+          class="btn-floating btn-large scale-transition my-button"
+          ><i class="material-icons">add</i></a
+        >
+      </div>
+      <p class="disclaimer">
+        Anything displayed here is from a third-party api and is being used for
+        educational/demonstrative purposes. Some content is inappropriate.
+      </p>
       <div id="fact-wrap" class="row"></div>
-      <a class="waves-effect waves-light btn-large" onclick="getAFact()"
+      <!-- <a class="waves-effect waves-light btn-large" onclick="getAFact()"
         >Chuck it</a
-      >
+      > -->
     </div>
   </body>
 </html>
